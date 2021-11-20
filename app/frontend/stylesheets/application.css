@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button, .btn {
+    @apply bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 text-white px-2 py-1.5 rounded;
+  }
+
+  h1 {
+    @apply text-3xl text-gray-900 leading-tight mb-4;
+  }
+  
+  h2 {
+    @apply text-2xl text-gray-900 leading-tight mb-4;
+  }
+
+  a {
+    @apply text-blue-700 hover:text-blue-800 focus:text-blue-800 p-2 inline-block ;
+  }
+}
+
+/* #notice, .notice {
+  @apply text-white bg-blue-700 rounded;
+} */
