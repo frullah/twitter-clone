@@ -1,9 +1,9 @@
-<div id="<%= dom_id tweet %>" class="border p-4">
-  <div class="mb-3">
-    <small><%= time_ago_in_words tweet.updated_at %> ago</small>
-  </div>
-  <div class="my-3">
+<div id="<%= dom_id tweet %>" class="tweet">
+  <div class="mt-3" aria-label="tweet-content">
     <%= tweet.content %>
   </div>
-  <%= yield %>
+
+  <div class="my-3" aria-label="tweet-history">
+    <small><%= time_ago_in_words tweet.updated_at %> ago</small>
+  </div>
 </div>

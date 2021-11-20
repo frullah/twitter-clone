@@ -1,7 +1,5 @@
 <div class="p-4 max-w-lg mx-auto">
   <h1>New tweet</h1>
   <%= render "form", tweet: @tweet %>
-  <div>
-    <%= link_to "Back to tweets", tweets_path %>
-  </div>
+  <%= link_to "Back to tweets", tweets_path, class: "btn mt-4" %>
 </div>

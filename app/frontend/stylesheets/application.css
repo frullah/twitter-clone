@@ -21,7 +21,12 @@ h2 {
 }
 
 a {
-  @apply text-blue-700 hover:text-hover focus:text-hover p-2 inline-block no-underline;
+  /* @apply text-blue-700 hover:text-hover focus:text-hover p-2 inline-block no-underline; */
+  @apply no-underline;
+}
+
+.tweet {
+  @apply text-black border px-3;
 }
 
 /* p {

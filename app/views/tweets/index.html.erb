@@ -1,12 +1,12 @@
 <div class="p-4 max-w-lg mx-auto">
-  <p id="notice"><%= notice %></p>
+  <%= render "shared/flash" %>
   <h1>Tweet</h1>
-  <div id="tweets" class="mb-4 grid gap-2 rounded">
+  <%= link_to "New tweet", new_tweet_path, class: "btn" %>
+  <div id="tweets" class="my-4 grid gap-2 rounded">
     <% @tweets.each do |tweet| %>
-      <%= render tweet do %>
-        <%= link_to "See tweet", tweet %>
+      <%= link_to tweet, class: "hover:bg-light-300" do %>
+        <%= render tweet %>
       <% end %>
     <% end %>
   </div>
-  <%= link_to "New tweet", new_tweet_path, class: "btn" %>
 </div>
