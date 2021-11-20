@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  sass: ^1.43.4
   tailwindcss: ^2.2.19
   vite: ^2.6.14
   vite-plugin-ruby: ^3.0.3
@@ -9,7 +10,8 @@ dependencies:
   tailwindcss: 2.2.19
 
 devDependencies:
-  vite: 2.6.14
+  sass: 1.43.4
+  vite: 2.6.14_sass@1.43.4
   vite-plugin-ruby: 3.0.3_vite@2.6.14
 
 packages:
@@ -96,7 +98,6 @@ packages:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.3.0
-    dev: false
 
   /arg/5.0.1:
     resolution: {integrity: sha512-e0hDa9H2Z9AwFkk2qDlwhoMYE4eToKarchkQHovNdLTCYMHZHeRjI71crOh+dio4K6u1IcwubQqo79Ga4CyAQA==}
@@ -109,7 +110,6 @@ packages:
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
-    dev: false
 
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -169,7 +169,6 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
-    dev: false
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
@@ -596,7 +595,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       binary-extensions: 2.2.0
-    dev: false
 
   /is-color-stop/1.1.0:
     resolution: {integrity: sha1-z/9HGu5N1cnhWFmPvhKWe1za00U=}
@@ -705,7 +703,6 @@ packages:
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
-    dev: false
 
   /object-hash/2.2.0:
     resolution: {integrity: sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==}
@@ -838,7 +835,6 @@ packages:
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.0
-    dev: false
 
   /reduce-css-calc/2.1.8:
     resolution: {integrity: sha512-8liAVezDmUcH+tdzoEGrhfbGcP7nOV4NkGE3a74+qqvE7nt9i4sKLGBuZNOnpI4WiGksiNPklZxva80061QiPg==}
@@ -894,6 +890,14 @@ packages:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
       queue-microtask: 1.2.3
+
+  /sass/1.43.4:
+    resolution: {integrity: sha512-/ptG7KE9lxpGSYiXn7Ar+lKOv37xfWsZRtFYal2QHNigyVQDx685VFT/h7ejVr+R8w7H4tmUgtulsKl5YpveOg==}
+    engines: {node: '>=8.9.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.2
+    dev: true
 
   /simple-swizzle/0.2.2:
     resolution: {integrity: sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=}
@@ -992,12 +996,12 @@ packages:
     dependencies:
       debug: 4.3.2
       fast-glob: 3.2.7
-      vite: 2.6.14
+      vite: 2.6.14_sass@1.43.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/2.6.14:
+  /vite/2.6.14_sass@1.43.4:
     resolution: {integrity: sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==}
     engines: {node: '>=12.2.0'}
     hasBin: true
@@ -1017,6 +1021,7 @@ packages:
       postcss: 8.3.11
       resolve: 1.20.0
       rollup: 2.60.0
+      sass: 1.43.4
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
