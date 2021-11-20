@@ -9,6 +9,7 @@ export default defineConfig({
     RubyPlugin(),
     FullReload(['config/routes.rb', 'app/views/**/*.html.erb']),
     WindiCSS({
+      root: __dirname,
       config: {
         extract: {
           include: [
