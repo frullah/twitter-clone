@@ -1,10 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<%= render @tweet %>
-
-<div>
-  <%= link_to "Edit this tweet", edit_tweet_path(@tweet) %> |
-  <%= link_to "Back to tweets", tweets_path %>
-
-  <%= button_to "Destroy this tweet", tweet_path(@tweet), method: :delete %>
+<div class="p-4 max-w-lg mx-auto">
+  <p id="notice"><%= notice %></p>
+  <%= render @tweet %>
+  <div class="my-4">
+    <%= link_to "Back to tweets", tweets_path, class: "btn" %>
+    <%= link_to "Edit this tweet", edit_tweet_path(@tweet), class: "btn" %>
+    <div class="inline-flex">
+      <%= button_to "Destroy this tweet", tweet_path(@tweet), method: :delete, class: "bg-red-700" %>
+    </div>
+  </div>
 </div>

@@ -13,8 +13,9 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.rich_text_area :content %>
+  <div class="overflow-scroll">
+    <%# TODO: set maxlength %>
+    <%= form.rich_text_area :content, maxlength: 256 %>
   </div>
 
   <div class="actions">

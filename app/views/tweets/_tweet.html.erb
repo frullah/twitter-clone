@@ -1,6 +1,9 @@
-<div id="<%= dom_id tweet %>" class="scaffold_record">
-  <%= tweet.content %>
-  <p>
-    <%= link_to "Show this tweet", tweet %>
-  </p>
+<div id="<%= dom_id tweet %>" class="border p-4">
+  <div class="mb-3">
+    <small><%= time_ago_in_words tweet.updated_at %> ago</small>
+  </div>
+  <div class="my-3">
+    <%= tweet.content %>
+  </div>
+  <%= yield %>
 </div>
