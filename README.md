@@ -9,6 +9,7 @@ built with
 - [View Component](https://viewcomponent.org)
 - [Trix](https://github.com/basecamp/trix) as ActionText editor
 - [Font Awesome](https://fontawesome.com/)
+- [Vite](https://vitejs.dev/) as frontend bundler
 
 ## installation
 
