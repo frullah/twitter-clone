@@ -1,21 +1,27 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@hotwired/stimulus': ^3.0.1
   '@hotwired/turbo-rails': ^7.0.1
   '@rails/actiontext': ^6.1.4-1
   postcss: ^8.3.11
   sass: ^1.43.4
+  stimulus-vite-helpers: ^1.0.4
   tailwindcss: ^2.2.19
   vite: ^2.6.14
   vite-plugin-full-reload: ^0.2.2
   vite-plugin-ruby: ^3.0.3
+  vite-plugin-stimulus-hmr: ^1.0.2
   vite-plugin-windicss: ^1.5.1
   windicss: ^3.2.1
 
 dependencies:
+  '@hotwired/stimulus': 3.0.1
   '@hotwired/turbo-rails': 7.0.1
   '@rails/actiontext': 6.1.4-1
+  stimulus-vite-helpers: 1.0.4
   tailwindcss: 2.2.19_postcss@8.3.11
+  vite-plugin-stimulus-hmr: 1.0.2
 
 devDependencies:
   postcss: 8.3.11
@@ -53,6 +59,10 @@ packages:
       '@babel/helper-validator-identifier': 7.15.7
       chalk: 2.4.2
       js-tokens: 4.0.0
+    dev: false
+
+  /@hotwired/stimulus/3.0.1:
+    resolution: {integrity: sha512-oHsJhgY2cip+K2ED7vKUNd2P+BEswVhrCYcJ802DSsblJFv7mPFVk3cQKvm2vHgHeDVdnj7oOKrBbzp1u8D+KA==}
     dev: false
 
   /@hotwired/turbo-rails/7.0.1:
@@ -320,7 +330,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
-    dev: true
 
   /defined/1.0.0:
     resolution: {integrity: sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=}
@@ -768,7 +777,6 @@ packages:
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
-    dev: true
 
   /nanoid/3.1.30:
     resolution: {integrity: sha512-zJpuPDwOv8D2zq2WRoMe1HsfZthVewpel9CAvTfc/2mBD1uUT/agc5f7GHGWXlYkFvi1mVxe4IjvP2HNrop7nQ==}
@@ -999,6 +1007,10 @@ packages:
     resolution: {integrity: sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==}
     dev: false
 
+  /stimulus-vite-helpers/1.0.4:
+    resolution: {integrity: sha512-Tbe6DQFiIbHeZIxh9aVuqS2kosSHJZyatns/X00wO9BQSrL1y4+dz4wSwM3lJH0ASxAx1DwC8TCTUgvRYEIaAQ==}
+    dev: false
+
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
     engines: {node: '>=4'}
@@ -1097,6 +1109,15 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vite-plugin-stimulus-hmr/1.0.2:
+    resolution: {integrity: sha512-bqVl0nVjaWDhq+o+I8unbEVgvSWxYsmzfGHPq6EyqsZuwY1FZapA7J6Ku4O6dm7NAMMGikIu1kMXO1PsAicj5A==}
+    dependencies:
+      debug: 4.3.2
+      stimulus-vite-helpers: 1.0.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /vite-plugin-windicss/1.5.1_vite@2.6.14:
     resolution: {integrity: sha512-AUuRFT5Y7SfW9eclaKf5BOTZ7MMfkUZzOeVzqd9yq/uIwzWyleRtssCTuJgZ0+om+hnXn9YwcIpR26lsaasIbg==}

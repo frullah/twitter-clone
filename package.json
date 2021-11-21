@@ -9,8 +9,11 @@
     "windicss": "^3.2.1"
   },
   "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.0.1",
     "@rails/actiontext": "^6.1.4-1",
-    "tailwindcss": "^2.2.19"
+    "stimulus-vite-helpers": "^1.0.4",
+    "tailwindcss": "^2.2.19",
+    "vite-plugin-stimulus-hmr": "^1.0.2"
   }
 }
