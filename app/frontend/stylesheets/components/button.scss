@@ -1,3 +1,29 @@
-button, .btn {
-  @apply bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 text-white px-2 py-1.5 rounded;
+.btn {
+  @apply inline-flex
+  items-center
+  rounded
+  px-2
+  py-1.5
+  cursor-pointer
+  focus:ring;
+}
+
+.btn-primary {
+  @apply bg-blue-700 
+  text-white
+  hover:text-white
+  hover:bg-hover
+  focus:bg-hover;
+}
+
+.btn-outline {
+  @apply border
+    border-blue-300
+    bg-white
+    text-current
+    hover:text-current
+    hover:bg-blue-100
+    focus:bg-blue-100
+    focus:ring-blue-200
+    focus:outline-none;
 }

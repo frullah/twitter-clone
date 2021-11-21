@@ -1,12 +1,12 @@
 <div class="p-4 max-w-lg mx-auto">
   <%= render "shared/flash" %>
   <h1>Tweet</h1>
-  <%= link_to "New tweet", new_tweet_path, class: "btn" %>
+  <%= render "form", tweet: Tweet.new %>
   <div id="tweets" class="my-4 grid gap-2 rounded">
     <% @tweets.each do |tweet| %>
-      <%= link_to tweet, class: "hover:bg-light-300" do %>
+      <div class="hover:bg-light-300" data-controller="tweet" data-tweet-url-value="<%= url_for(@tweet) %>" data-action="tweet#openTweet">
         <%= render tweet %>
-      <% end %>
+      </div>
     <% end %>
   </div>
 </div>

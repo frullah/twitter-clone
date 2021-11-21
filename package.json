@@ -9,6 +9,7 @@
     "windicss": "^3.2.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.0.1",
     "@rails/actiontext": "^6.1.4-1",

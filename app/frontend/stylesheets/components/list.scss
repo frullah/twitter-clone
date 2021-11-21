@@ -1,0 +1,10 @@
+.list-group {
+  
+}
+
+.list-group-tile {
+}
+
+.list-group-item {
+  @apply w-full p-2 block bg-white hover:bg-blue-100;
+}

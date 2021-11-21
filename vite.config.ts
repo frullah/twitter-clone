@@ -7,13 +7,21 @@ import colors from 'windicss/colors'
 export default defineConfig({
   plugins: [
     RubyPlugin(),
-    FullReload(['config/routes.rb', 'app/views/**/*.html.erb']),
+    FullReload([
+      'config/routes.rb',
+      './app/views/**/*.html.erb',
+      "./app/components/**/*.html.erb",
+      "./app/components/**/*.rb",
+      "./test/components/previews/**/*.rb"
+    ]),
     WindiCSS({
       root: __dirname,
       config: {
         extract: {
           include: [
-            "./app/views/**/*.html.erb"
+            "./app/views/**/*.html.erb",
+            "./app/components/**/*.html.erb",
+            "./app/components/**/*.rb"
           ]
         },
         // purge: [

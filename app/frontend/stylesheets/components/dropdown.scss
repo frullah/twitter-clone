@@ -1,0 +1,18 @@
+.dropdown {
+  @apply relative inline-block;
+}
+
+/* why the design is not following the dropdown ? */
+.dropdown-content {
+  @apply absolute
+    hidden
+    rounded
+    border
+    border-gray-300
+    shadow-md
+    bg-white;
+}
+
+.dropdown:focus-within .dropdown-content {
+  @apply block whitespace-nowrap;
+}
