@@ -1,24 +1,19 @@
-# README
+# Twitter clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+just a simple clone version of Twitter :)
 
-Things you may want to cover:
+built with [Rails](https://rubyonrails.org/), [Hotwire](https://hotwire.dev/), [WindiCSS](https://windicss.org/), and [View Component](https://viewcomponent.org)
 
-* Ruby version
+## installation
 
-* System dependencies
+install packages
 
-* Configuration
+```
+pnpm install
+bundle install
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run server
+```
+rails s
+```
