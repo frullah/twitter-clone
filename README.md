@@ -2,7 +2,13 @@
 
 just a simple clone version of Twitter :)
 
-built with [Rails](https://rubyonrails.org/), [Hotwire](https://hotwire.dev/), [WindiCSS](https://windicss.org/), and [View Component](https://viewcomponent.org)
+built with
+- [Rails](https://rubyonrails.org/)
+- [Hotwire](https://hotwire.dev/)
+- [WindiCSS](https://windicss.org/)
+- [View Component](https://viewcomponent.org)
+- [Trix](https://github.com/basecamp/trix) as ActionText editor
+- [Font Awesome](https://fontawesome.com/)
 
 ## installation
 
