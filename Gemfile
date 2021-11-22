@@ -53,3 +53,5 @@ end
 gem "vite_rails", "~> 3.0"
 
 gem "view_component", "~> 2.44"
+
+gem "hotwire-rails", "~> 0.1.3"

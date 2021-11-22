@@ -26,7 +26,11 @@ class TweetsController < ApplicationController
     if @tweet.save
       redirect_to tweets_path, notice: "Tweet was successfully created."
     else
-      render :new, status: :unprocessable_entity
+      render turbo_stream: turbo_stream.replace(
+        ActionView::RecordIdentifier.dom_id(@tweet),
+        partial: "form",
+        locals: {tweet: @tweet}
+      )
     end
   end
 
