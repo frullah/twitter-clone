@@ -30,7 +30,7 @@ class TweetsController < ApplicationController
         locals: {tweet: @tweet}
       )
     else
-      render turbo_stream: turbo_stream.replace(
+      render status: :unprocessable_entity, turbo_stream: turbo_stream.replace(
         ActionView::RecordIdentifier.dom_id(@tweet),
         partial: "form",
         locals: {tweet: @tweet}

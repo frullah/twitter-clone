@@ -1,4 +1,12 @@
-<%= form_with(model: tweet, html: {class: "grid gap-4"}, id: dom_id(tweet)) do |form| %>
+<%= form_with(
+  model: tweet,
+  html: {class: "grid gap-4"},
+  id: dom_id(tweet),
+  data: {
+    controller: "tweet-form",
+    action: "turbo:submit-end->tweet-form#tweetSubmitted"
+  }
+) do |form| %>
   <% if tweet.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(tweet.errors.count, "error") %> prohibited this tweet from being saved:</h2>
