@@ -24,7 +24,11 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(tweet_params)
 
     if @tweet.save
-      redirect_to tweets_path, notice: "Tweet was successfully created."
+      render turbo_stream: turbo_stream.prepend(
+        "tweets",
+        partial: "tweet",
+        locals: {tweet: @tweet}
+      )
     else
       render turbo_stream: turbo_stream.replace(
         ActionView::RecordIdentifier.dom_id(@tweet),
