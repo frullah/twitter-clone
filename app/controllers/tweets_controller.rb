@@ -26,7 +26,7 @@ class TweetsController < ApplicationController
     if @tweet.save
       render turbo_stream: turbo_stream.prepend(
         "tweets",
-        partial: "tweet",
+        partial: "created_tweet",
         locals: {tweet: @tweet}
       )
     else

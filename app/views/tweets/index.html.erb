@@ -4,9 +4,7 @@
   <%= render "form", tweet: Tweet.new %>
   <div id="tweets" class="my-4 grid gap-2 rounded">
     <% @tweets.each do |tweet| %>
-      <div class="hover:bg-light-300" data-controller="tweet" data-tweet-url-value="<%= url_for(@tweet) %>" data-action="tweet#openTweet">
-        <%= render tweet %>
-      </div>
+      <%= render "tweet_link", tweet: tweet %>
     <% end %>
   </div>
 </div>
