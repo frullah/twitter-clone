@@ -1,11 +1,10 @@
-<div class="p-4 max-w-lg mx-auto">
-  <%= render "shared/flash" %>
-  <%= render @tweet %>
-  <div class="my-4">
-    <%= link_to "Back to tweets", tweets_path, class: "btn btn-primary" %>
-    <%= link_to "Edit this tweet", edit_tweet_path(@tweet), class: "btn btn-primary" %>
-    <div class="inline-flex">
-      <%= button_to "Destroy this tweet", @tweet, method: :delete, class: "btn bg-red-700 text-white" %>
-    </div>
+<div class="max-w-lg mx-auto">
+  <div class="py-2">
+    <%= link_to tweets_path, class: "btn text-primary-700" do %>
+      <i class="fas fa-chevron-left pr-2"></i>
+      Back
+    <% end %>
   </div>
+
+  <%= render @tweet %>
 </div>
