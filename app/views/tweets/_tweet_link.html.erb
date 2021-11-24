@@ -1,3 +1,7 @@
-  <div class="cursor-pointer hover:bg-light-300" data-controller="tweet" data-tweet-url-value="<%= url_for(tweet) %>" data-action="tweet#openTweet">
-    <%= render tweet %>
-  </div>
+<div
+  class="cursor-pointer hover:bg-light-300"
+  data-controller="tweet"
+  data-tweet-url-value="<%= url_for(tweet) %>"
+  data-action="click->tweet#openTweet">
+  <%= render tweet %>
+</div>
