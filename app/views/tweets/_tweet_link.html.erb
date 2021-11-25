@@ -3,5 +3,5 @@
   data-controller="tweet"
   data-tweet-url-value="<%= url_for(tweet) %>"
   data-action="click->tweet#openTweet">
-  <%= render tweet %>
+  <%= render TweetCardComponent.new(tweet: tweet) %>
 </div>
