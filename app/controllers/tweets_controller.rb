@@ -55,7 +55,9 @@ class TweetsController < ApplicationController
   # DELETE /tweets/1
   def destroy
     @tweet.destroy
-    redirect_to tweets_url, notice: "Tweet was successfully destroyed."
+    render turbo_stream: turbo_stream.remove(
+      ActionView::RecordIdentifier.dom_id(@tweet)
+    )
   end
 
   private

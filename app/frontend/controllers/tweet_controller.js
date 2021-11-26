@@ -4,6 +4,9 @@ export default class extends Controller {
   static values = {url: String}
 
   openTweet(event) {
-    Turbo.visit(this.urlValue)
+    // navigate only when clicked outside of dropdown
+    if (!event.target.closest(".dropdown")) {
+      Turbo.visit(this.urlValue)
+    }
   }
 }

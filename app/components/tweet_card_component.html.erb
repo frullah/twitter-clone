@@ -5,7 +5,7 @@
       <%# TODO: make dropdown positioned to other side if overflow %>
       <%= render(DropdownComponent.new) do |c| %>
         <% c.dropdown_button do %>
-          <%= render ButtonOutlineComponent.new(onclick: "event.stopPropagation()") do %>
+          <%= render ButtonOutlineComponent.new do %>
             <i class="fas fa-ellipsis-v px-1"></i>
           <% end %>
         <% end %>
