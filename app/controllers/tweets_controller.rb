@@ -26,7 +26,13 @@ class TweetsController < ApplicationController
     if @tweet.save
       render turbo_stream: turbo_stream.prepend(
         "tweets",
-        render_to_string(TweetCardComponent.new(tweet: @tweet))
+        render_to_string(
+          TweetCardComponent.new(
+            tweet: @tweet,
+            navigatable: true,
+            class: "new-tweet"
+          )
+        )
       )
     else
       render status: :unprocessable_entity, turbo_stream: turbo_stream.replace(
