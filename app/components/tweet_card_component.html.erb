@@ -1,4 +1,4 @@
-<%= turbo_frame_tag dom_id(@tweet) do %>
+<%= turbo_frame_tag dom_id(@tweet), **@options do %>
   <div class="text-black border px-3">
     <div class="flex mt-4" aria-label="tweet-header">
       <div class="flex-1"></div>

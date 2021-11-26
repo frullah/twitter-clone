@@ -4,7 +4,7 @@
   <%= render "form", tweet: Tweet.new %>
   <div id="tweets" class="my-4 grid gap-2 rounded">
     <% @tweets.each do |tweet| %>
-      <%= render "tweet_link", tweet: tweet %>
+      <%= render TweetCardComponent.new(tweet: tweet, navigatable: true) %>
     <% end %>
   </div>
 </div>
